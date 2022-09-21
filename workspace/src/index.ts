@@ -24,3 +24,17 @@ function addTodo (){
    }
 } 
 
+
+// using interfaces 
+interface user {
+  name : string;
+  age : number ;
+  school: string;
+}
+
+const object = {name : 'Godwin Aikonedo', age : 45, school:'OAU'}
+function addUser (user: user ):string {
+    return (`this is the user given his name is ${user.name  } and ${user.school}` )
+}
+
+console.log( addUser(object));

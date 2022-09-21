@@ -21,3 +21,8 @@ function addTodo() {
         list === null || list === void 0 ? void 0 : list.append(li);
     }
 }
+const object = { name: 'Godwin Aikonedo', age: 45, school: 'OAU' };
+function addUser(user) {
+    return (`this is the user given his name is ${user.name} and ${user.school}`);
+}
+console.log(addUser(object));
