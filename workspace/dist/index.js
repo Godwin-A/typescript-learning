@@ -8,8 +8,16 @@ button === null || button === void 0 ? void 0 : button.addEventListener('click',
     input.value = '';
 });
 function addTodo() {
+    const checkboxInput = document.createElement('input');
+    checkboxInput.type = 'checkbox';
     const todo = input.value;
     const li = document.createElement('li');
-    li.append(todo);
-    list === null || list === void 0 ? void 0 : list.append(li);
+    if (todo == '') {
+        alert('please fill something in todo');
+    }
+    else {
+        li.append(checkboxInput);
+        li.append(todo);
+        list === null || list === void 0 ? void 0 : list.append(li);
+    }
 }

@@ -11,9 +11,16 @@ button?.addEventListener('click', function(e){
 
 
 function addTodo (){
+  const checkboxInput = document.createElement('input')
+   checkboxInput.type = 'checkbox'
    const todo = input.value
    const li = document.createElement('li')
-li.append(todo)
-list?.append(li)
+   if(todo == ''){
+    alert('please fill something in todo')
+   }else{
+     li.append(checkboxInput)
+   li.append(todo)
+  list?.append(li)
+   }
 } 
 
